@@ -1,6 +1,6 @@
 {
   "name": "nuxt7",
-  "version": "5.0.1",
+  "version": "5.1.0",
   "license": "MIT",
   "main": "dist/module.js",
   "files": [
@@ -16,8 +16,8 @@
     "ks:start": "nuxt start --spa examples/kitchen-sink",
     "lint": "eslint --ext .js,.vue,.ts",
     "release": "yarn test && yarn build && standard-version && git push --follow-tags && npm publish",
-    "release:patch": "standard-version --release-as patch",
     "release:minor": "standard-version --release-as minor",
+    "release:patch": "standard-version --release-as patch",
     "test": "yarn lint"
   },
   "resolutions": {
@@ -35,6 +35,7 @@
     "upath": "^2.0.1"
   },
   "devDependencies": {
+    "@nuxt/kit": "^4.1.1",
     "@nuxt/types": "^2.18.1",
     "@nuxtjs/eslint-config-typescript": "^12.1.0",
     "@nuxtjs/pwa": "^3.3.5",
