@@ -1,6 +1,6 @@
 {
   "name": "nuxt7",
-  "version": "4.3.0",
+  "version": "5.0.0",
   "license": "MIT",
   "main": "dist/module.js",
   "files": [
@@ -16,7 +16,8 @@
     "ks:start": "nuxt start --spa examples/kitchen-sink",
     "lint": "eslint --ext .js,.vue,.ts",
     "release": "yarn test && yarn build && standard-version && git push --follow-tags && npm publish",
-    "test": "yarn lint"
+    "test": "yarn lint",
+    "postinstall": "yarn build"
   },
   "resolutions": {
     "esbuild": "^0.25.9",
