@@ -16,6 +16,8 @@
     "ks:start": "nuxt start --spa examples/kitchen-sink",
     "lint": "eslint --ext .js,.vue,.ts",
     "release": "yarn test && yarn build && standard-version && git push --follow-tags && npm publish",
+    "release:patch": "standard-version --release-as patch",
+    "release:minor": "standard-version --release-as minor",
     "test": "yarn lint",
     "postinstall": "yarn build"
   },
