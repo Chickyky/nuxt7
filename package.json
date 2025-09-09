@@ -18,24 +18,30 @@
     "release": "yarn test && yarn build && standard-version && git push --follow-tags && npm publish",
     "test": "yarn lint"
   },
+  "resolutions": {
+    "esbuild": "^0.25.9",
+    "rollup": "^4.50.1",
+    "rollup-plugin-esbuild": "^6.2.1"
+  },
   "dependencies": {
-    "defu": "3.2.2",
-    "framework7": "^5.7.14",
-    "framework7-icons": "^3.0.1",
-    "framework7-vue": "^5.7.14",
-    "less": "^4.1.0",
-    "less-loader": "^6",
+    "defu": "^6.1.4",
+    "framework7": "^8.3.4",
+    "framework7-icons": "^5.0.5",
+    "framework7-vue": "^8.3.4",
+    "less": "^4.4.1",
+    "less-loader": "^12.3.0",
     "upath": "^2.0.1"
   },
   "devDependencies": {
-    "@nuxt/types": "^2.14.12",
-    "@nuxtjs/eslint-config-typescript": "latest",
-    "@nuxtjs/pwa": "latest",
-    "eslint": "latest",
+    "@nuxt/types": "^2.18.1",
+    "@nuxtjs/eslint-config-typescript": "^12.1.0",
+    "@nuxtjs/pwa": "^3.3.5",
+    "eslint": "^9.35.0",
     "mkdist": "^0.1.0",
-    "nuxt-edge": "latest",
+    "nuxt-edge": "^2.18.2-28661769.e265ef3",
+    "rollup": "^4.50.1",
     "siroc": "^0.6.2",
-    "standard-version": "latest",
-    "surge": "latest"
+    "standard-version": "^9.5.0",
+    "surge": "^0.24.6"
   }
 }
